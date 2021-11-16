@@ -15,16 +15,22 @@
     left: 0px;
     bottom: -85px;
     width: 100%;
-    transition: .35s;
-    -webkit-transition: .35s;
-    -moz-transition: .35s;
-    -ms-transition: .35s;
-    -o-transition: .35s;
+    transition: .55s, transform .7s;
+    -webkit-transition: .55s, transform .7s;
+    -moz-transition: .55s, transform .7s;
+    -ms-transition: .55s, transform .7s;
+    -o-transition: .55s, transform .7s;
+    transition-timing-function: cubic-bezier(0.53,-0.76, 0.4, 1.89);
     background:linear-gradient(2deg,#23a2aA,#38CFD9);
     padding-top: 10px;
     border-width:0px 3px 3px 3px ;
     border-color: #23a2aA;
     border-style: solid;
+    transform: translate(100px,45px) rotate(35deg);
+    -webkit-transform: translate(100px,45px) rotate(35deg);
+    -moz-transform: translate(100px,45px) rotate(35deg);
+    -ms-transform: translate(100px,45px) rotate(35deg);
+    -o-transform: translate(100px,45px) rotate(35deg);
 }
 .open ul li {
     padding: 5px 2px;
@@ -54,6 +60,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10px 15px;
 }
 .main div {
     box-shadow: 0 3px 20px 3px black;
@@ -69,7 +76,8 @@
 }
 footer {
     background-color: #136C72;
-    min-height: 30vh;
+    min-height: 20vh;
+    padding: 10px 50px;
     display: flex;
     flex-flow: row;
     gap: 15px;
@@ -101,15 +109,20 @@ button {
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
-    transition: background, border-radius .35s;
-    -webkit-transition: background, border-radius .35s;
-    -moz-transition: background, border-radius .35s;
-    -ms-transition: background, border-radius .35s;
-    -o-transition: background, border-radius .35s;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+    -o-transition:.5s;
 }
 button:focus .open {
     visibility: visible;
     opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
 }
 button:hover,button:active,button:focus {
     background-color:#23a2aA;
@@ -129,7 +142,7 @@ button:hover,button:active,button:focus {
         padding: 25px 15px;
     }
     .main .pragraph {
-        margin-bottom:5px;
+        margin-bottom:25px;
         background-color: #dfdfdf;
         padding: 35px 15px;
         border: 2px solid #136C72;
@@ -158,10 +171,15 @@ button:hover,button:active,button:focus {
         -moz-border-radius: 200px;
         -ms-border-radius: 200px;
         -o-border-radius: 200px;
-}
-    div.pragraph:hover::after {
+    }
+    div.pragraph:hover:after {
         width: 99%;
         
     } 
+    div.pragraph:active:after {
+        width: 99%;
+        
+    } 
+    
 
 }

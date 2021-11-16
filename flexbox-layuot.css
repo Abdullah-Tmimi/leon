@@ -124,6 +124,15 @@ button:focus .open {
     -ms-transform: none;
     -o-transform: none;
 }
+button:active .open {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
 button:hover,button:active,button:focus {
     background-color:#23a2aA;
     border-radius: 5px;

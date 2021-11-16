@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.open {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 0px;
+    bottom: -85px;
+    width: 100%;
+    transition: .35s;
+    -webkit-transition: .35s;
+    -moz-transition: .35s;
+    -ms-transition: .35s;
+    -o-transition: .35s;
+    background:linear-gradient(2deg,#23a2aA,#38CFD9);
+    padding-top: 10px;
+    border-width:0px 3px 3px 3px ;
+    border-color: #23a2aA;
+    border-style: solid;
+}
+.open ul li {
+    padding: 5px 2px;
+}
+
+.padding {
+    padding-inline: 5%;
+}
+
+.header {
+    background-color: #23424A;
+    padding: 80px 15px;
+    color: white;
+}
+
+.main {
+    background-color: #dfdfdf;
+    color: black;
+    display: flex;
+    flex-flow: row;
+    gap: 15px;
+    min-height: 45vh;
+}
+.pragraph {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main div {
+    box-shadow: 0 3px 20px 3px black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: linear-gradient(0deg,#88a,#dfdfdf);
+}
+.main h1 {
+    color: #87629A;
+}
+footer {
+    background-color: #136C72;
+    min-height: 30vh;
+    display: flex;
+    flex-flow: row;
+    gap: 15px;
+    color: white;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 10px;
+} 
+.continer {
+    width: 1000px;
+    max-width: 100%;
+}
+.header p {
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+button {
+    position: relative;
+    outline: none;
+    background-color: #38CFD9;
+    padding: 10px 15px;
+    font-weight: 600 ;
+    border: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    transition: background, border-radius .35s;
+    -webkit-transition: background, border-radius .35s;
+    -moz-transition: background, border-radius .35s;
+    -ms-transition: background, border-radius .35s;
+    -o-transition: background, border-radius .35s;
+}
+button:focus .open {
+    visibility: visible;
+    opacity: 1;
+}
+button:hover,button:active,button:focus {
+    background-color:#23a2aA;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+@media (min-width:0px) and (max-width:768px) {
+    .main {
+        flex-flow: column;
+        background-color: #ffffff;
+        padding: 25px 15px;
+    }
+    .main .pragraph {
+        margin-bottom:5px;
+        background-color: #dfdfdf;
+        padding: 35px 15px;
+        border: 2px solid #136C72;
+        position: relative;
+    }
+    .main .pragraph::after {
+        content:'';
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        background:linear-gradient(20deg,#dfdfdf,#87629A);
+        height: 4px;
+        width: 0%;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        border-radius: 200px;
+        -webkit-border-radius: 200px;
+        -moz-border-radius: 200px;
+        -ms-border-radius: 200px;
+        -o-border-radius: 200px;
+}
+    div.pragraph:hover::after {
+        width: 99%;
+        
+    } 
+
+}

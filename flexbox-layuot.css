@@ -9,28 +9,28 @@
 }
 
 .open {
-    position: absolute;
+   position: absolute;
     visibility: hidden;
     opacity: 0;
     left: 0px;
     bottom: -85px;
     width: 100%;
-    transition: .55s, transform .7s;
-    -webkit-transition: .55s, transform .7s;
-    -moz-transition: .55s, transform .7s;
-    -ms-transition: .55s, transform .7s;
-    -o-transition: .55s, transform .7s;
-    transition-timing-function: cubic-bezier(0.53,-0.76, 0.4, 1.89);
+    transition: .55s, transform .5s;
+    -webkit-transition: .55s, transform .5s;
+    -moz-transition: .55s, transform .5s;
+    -ms-transition: .55s, transform .5s;
+    -o-transition: .55s, transform .5s;
+    transition-timing-function: cubic-bezier(0.53,-0.76, 0.4, 2.89);
     background:linear-gradient(2deg,#23a2aA,#38CFD9);
     padding-top: 10px;
     border-width:0px 3px 3px 3px ;
     border-color: #23a2aA;
     border-style: solid;
-    transform: translate(100px,45px) rotate(35deg);
-    -webkit-transform: translate(100px,45px) rotate(35deg);
-    -moz-transform: translate(100px,45px) rotate(35deg);
-    -ms-transform: translate(100px,45px) rotate(35deg);
-    -o-transform: translate(100px,45px) rotate(35deg);
+    transform: translate(100px,75px) rotate(95deg);
+    -webkit-transform: translate(100px,75px) rotate(95deg);
+    -moz-transform: translate(100px,75px) rotate(95deg);
+    -ms-transform: translate(100px,75px) rotate(95deg);
+    -o-transform: translate(100px,75px) rotate(95deg);
 }
 .open ul li {
     padding: 5px 2px;

@@ -102,7 +102,7 @@ header .container {
   border-width: 15px;
 }
 
-.icons:hover .links {
+.icons:hover .links ,.icons:active .links ,.icons:focus .links {
   display: block;
   animation: op 0.5s;
   -webkit-animation: op 0.5s;

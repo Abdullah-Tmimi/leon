@@ -425,6 +425,22 @@ nav .container h1 {
 }
 .feel i {
   font-size: 30px;
+  transition:.35s;
+  -webkit-transition:.35s;
+  -moz-transition:.35s;
+  -ms-transition:.35s;
+  -o-transition:.35s;
+  
+
+}
+.feel a:hover i {
+  color:#2196f3;
+  text-shadow: 3px 3px 3px black;
+  transform:translate(-2px,-4px) scale(1.15);
+  -webkit-transform:translate(-2px,-4px) scale(1.15);
+  -moz-transform:translate(-2px,-4px) scale(1.15);
+  -ms-transform:translate(-2px,-4px) scale(1.15);
+  -o-transform:translate(-2px,-4px) scale(1.15);
 }
 footer {
   background-color: var(--second-color);
